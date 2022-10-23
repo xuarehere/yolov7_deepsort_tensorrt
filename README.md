@@ -1,7 +1,7 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 13:50:12
+ * @LastEditTime: 2022-10-23 17:00:17
  * @LastEditors: xuarehere
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
@@ -128,11 +128,28 @@ python3 tools/deploy/onnx_export.py --config-file configs/Market1501/mgn_R50-ibn
 We provide a default video for inference(`001.avi`). You could change it with yours.
 
 **5. Buid project**
+
+5.1 Use `build.sh`
 ```
-mkdir build
 cd scripts
-bash build_new.sh
+bash build.sh
 ```
+
+If the directory `./build` exists, you want to remove it and build it again, please use the command:
+
+```
+cd scripts
+bash build.sh rm
+```
+
+5.2 Build it manually
+
+```
+mkdir build 
+cd scripts
+cd ../build/  && cmake .. && make -j$(nproc) && cd -
+```
+
 
 **6. Run demo**
 ```
