@@ -1,0 +1,14 @@
+.idea/
+cmake-build-debug/
+
+*.onnx
+*.trt
+*.mp4
+*.avi
+*.mpg
+build/
+tmp88/
+dev/
+results/
+weights/
+.git.bk/

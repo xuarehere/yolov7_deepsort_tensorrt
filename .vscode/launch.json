@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            // "program": "${workspaceFolder}/yolov5_fastreid_deepsort_tensorrt/build/deepsort",
+            "program": "${workspaceFolder}/build/deepsort",
+            "cwd": "${fileDirname}/",
+            "args": [
+                // // ./deepsort ../configs/config.yaml /workspace/dataset/video/1634184901.mp4
+                // -------------- yolov5
+                "../configs/config_v5.yaml",
+                "../001.avi"
+
+                // //-------------- yolov7
+                // "../configs/config_v7.yaml",
+                // "../001.avi"
+            ],
+            "stopAtEntry": false,
+
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
