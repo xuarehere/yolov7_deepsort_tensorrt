@@ -1,7 +1,7 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 13:42:06
+ * @LastEditTime: 2022-10-23 13:45:13
  * @LastEditors: xuarehere
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
@@ -77,6 +77,7 @@ Yaml: 0.7.0
 <details><summary> <b>Expand</b> </summary>
 
 **0. Check all dependencies installed**
+
 see [`Dependencies`](#Dependencies) for more detail.
 
 **1. Clone this repository**
