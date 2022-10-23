@@ -36,7 +36,10 @@
 
 
 ## **Project structure**
+
 <details><summary> <b>Expand</b> </summary>
+
+```
 yolov7_deepsort_tensorrt/
 |-- build
 |-- configs
@@ -54,6 +57,7 @@ yolov7_deepsort_tensorrt/
 |-- scripts
 |-- src
 `-- weights
+```
 
 </details>
 
