@@ -1,12 +1,20 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 12:49:37
+ * @LastEditTime: 2022-10-23 13:42:06
  * @LastEditors: xuarehere
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
  * 可以输入预定的版权声明、个性签名、空行等
 -->
+- [**Object Tracking with TensorRT**](#object-tracking-with-tensorrt)
+  - [**Introduction**](#introduction)
+  - [**Model**](#model)
+  - [**Project structure**](#project-structure)
+  - [**Dependencies**](#dependencies)
+  - [**Quick Start**](#quick-start)
+  - [**Demo videos and images**](#demo-videos-and-images)
+  - [**Reference**](#reference)
 #  **Object Tracking with TensorRT**
 ![](demo/demo.jpg)
 ## **Introduction**
@@ -18,7 +26,7 @@
 
 
 
-## Model
+## **Model**
 
 **Object detection**
 - YOLOV7
@@ -27,7 +35,7 @@
 - fast-reid(mobilenet-v2)
 
 
-## Project structure
+## **Project structure**
 <details><summary> <b>Expand</b> </summary>
 yolov7_deepsort_tensorrt/
 |-- build
@@ -49,7 +57,7 @@ yolov7_deepsort_tensorrt/
 
 </details>
 
-## Dependencies
+## **Dependencies**
 <details><summary> <b>Expand</b> </summary>
 
 ```
@@ -66,16 +74,20 @@ Yaml: 0.7.0
 
 ## **Quick Start**
 
-**0. Build environments**
-0. Check all dependencies installed
+<details><summary> <b>Expand</b> </summary>
 
-1. Clone this repository
+**0. Check all dependencies installed**
+see [`Dependencies`](#Dependencies) for more detail.
+
+**1. Clone this repository**
+
 ```
 git clone https://github.com/xuarehere/yolov7_deepsort_tensorrt.git
 ```
 
 
-2. Get detector parameters
+**2. Get detector parameters**
+
 ```
 cd weights
 # Get model parameters
@@ -92,7 +104,8 @@ python export.py --weights ./weights/yolov7.pt --simplify --grid
 ```
 
 
-3. Get ReID parameters
+**3. Get ReID parameters**
+
 ```
 cd weights
 # Get model parameters
@@ -105,22 +118,24 @@ https://github.com/JDAI-CV/fast-reid.git
 python3 tools/deploy/onnx_export.py --config-file configs/Market1501/mgn_R50-ibn.yml --name mgn_R50-ibn --output outputs/onnx_model --batch-size 32 --opts MODEL.WEIGHTS market_mgn_R50-ibn.pth
 ```
 
-4. Prepare video for inference
+**4. Prepare video for inference**
+
 We provide a default video for inference(`001.avi`). You could change it with yours.
 
-5. Buid project
+**5. Buid project**
 ```
 cd scripts
 bash build_new.sh
 ```
 
-6. Run demo
+**6. Run demo**
 ```
 cd scripts
 bash yolov7_deepsort.sh
 ```
+</details>
 
-## Demo videos and images
+## **Demo videos and images**
 
 ![](demo/demo.gif)
 
