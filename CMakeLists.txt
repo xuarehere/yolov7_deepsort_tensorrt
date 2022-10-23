@@ -1,13 +1,3 @@
-/*
- * @Author: xuarehere
- * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 13:01:07
- * @LastEditors: xuarehere
- * @Description: 
- * @FilePath: /yolov7_deepsort_tensorrt/CMakeLists.txt
- * 
- */
-
 cmake_minimum_required(VERSION 3.5)
 
 project(deepsort)

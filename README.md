@@ -1,7 +1,7 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 13:45:13
+ * @LastEditTime: 2022-10-23 13:50:12
  * @LastEditors: xuarehere
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
@@ -129,6 +129,7 @@ We provide a default video for inference(`001.avi`). You could change it with yo
 
 **5. Buid project**
 ```
+mkdir build
 cd scripts
 bash build_new.sh
 ```
