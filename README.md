@@ -1,8 +1,8 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-23 17:00:17
- * @LastEditors: xuarehere
+ * @LastEditTime: 2022-10-24 13:46:28
+ * @LastEditors: xujianrong
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
  * 可以输入预定的版权声明、个性签名、空行等
@@ -84,14 +84,23 @@ Yaml: 0.7.0
 
 see [`Dependencies`](#Dependencies) for more detail.
 
-**1. Clone this repository**
+**1. Clone this repository and models**
 
+**1.1 Get this repository**
 ```
 git clone https://github.com/xuarehere/yolov7_deepsort_tensorrt.git
 ```
 
+**1.2 Get the models**
 
-**2. Get detector parameters**
+```
+cd scripts/
+bash scripts/get_weight.sh
+```
+
+In addition, you could get the model from the [releases](https://github.com/xuarehere/yolov7_deepsort_tensorrt/releases/tag/v0.0.1)
+
+**2. Get detector parameters(Optionally)**
 
 ```
 cd weights
@@ -109,7 +118,7 @@ python export.py --weights ./weights/yolov7.pt --simplify --grid
 ```
 
 
-**3. Get ReID parameters**
+**3. Get ReID parameters(Optionally)**
 
 ```
 cd weights
