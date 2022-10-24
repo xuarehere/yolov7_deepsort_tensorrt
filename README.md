@@ -1,7 +1,7 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-24 13:50:12
+ * @LastEditTime: 2022-10-24 13:55:58
  * @LastEditors: xujianrong
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
@@ -22,7 +22,7 @@
 
   This is an implementation of MOT tracking algorithm deep sort cplusplus code.  Deep sort is basicly the same with sort but added a CNN model to extract features in image of human part bounded by a detector. This CNN model is indeed a RE-ID model. The idea of [deepsort](https://arxiv.org/abs/1703.07402) is adopted in object tracking. 
 
-  We use [yolov7](https://github.com/WongKinYiu/yolov7) model as the object detector. And the feature extractor is RE-ID model as which  [fast-reid](https://github.com/JDAI-CV/fast-reid) is used. The purpose of using these lightweight models is to ensure the real-time efficiency of video processing. The model inference base on [TensorRT](https://developer.nvidia.com/zh-cn/tensorrt) engine. 
+  We use [yolov7](https://github.com/WongKinYiu/yolov7) model as the object detector. And the feature extractor is RE-ID model as which  [fast-reid](https://github.com/JDAI-CV/fast-reid) is used. The purpose of using these lightweight models is to ensure the real-time efficiency of video processing. The model inference base on [TensorRT](https://developer.nvidia.com/zh-cn/tensorrt) engine. It also supports yolov5 as a detector.
 
 
 
@@ -30,6 +30,7 @@
 
 **Object detection**
 - YOLOV7
+- YOLOV5s
 
 **ReID** 
 - fast-reid(mobilenet-v2)
