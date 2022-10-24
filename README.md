@@ -1,7 +1,7 @@
 <!--
  * @Author: xuarehere
  * @Date: 2022-09-18 04:14:53
- * @LastEditTime: 2022-10-24 13:46:28
+ * @LastEditTime: 2022-10-24 13:50:12
  * @LastEditors: xujianrong
  * @Description: 
  * @FilePath: /yolov7_deepsort_tensorrt/README.md
@@ -51,7 +51,6 @@ yolov7_deepsort_tensorrt/
 |       |       `-- node
 |       |           `-- detail
 |       `-- libs
-|-- dev
 |-- includes
 |-- samples
 |-- scripts
@@ -98,7 +97,7 @@ cd scripts/
 bash scripts/get_weight.sh
 ```
 
-In addition, you could get the model from the [releases](https://github.com/xuarehere/yolov7_deepsort_tensorrt/releases/tag/v0.0.1)
+In addition, you could get the model from the [releases](https://github.com/xuarehere/yolov7_deepsort_tensorrt/releases/tag/v0.0.1). Then, the step2 and the step3 could be skipped Optionally.
 
 **2. Get detector parameters(Optionally)**
 
